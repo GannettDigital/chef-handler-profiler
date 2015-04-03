@@ -13,4 +13,10 @@ describe 'chef-handler-profiler::default' do
   it 'installs the chef_gem chef-handler-profiler' do
     expect(chef_run).to install_chef_gem('chef-handler-profiler')
   end
+
+  it 'enables the chef-handler for profiler' do
+    expect(chef_run).to enable_chef_handler(Chef::Handler::Profiler).with(
+      source: 'chef/handler/chef_profiler'
+      )
+  end
 end
