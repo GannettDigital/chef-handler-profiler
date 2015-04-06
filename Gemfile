@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'chef-handler-profiler'
 gem 'berkshelf'
 gem 'rubocop'
 gem 'fauxhai'

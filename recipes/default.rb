@@ -11,7 +11,6 @@ include_recipe 'chef_handler'
 # Install `chef-handler-profiler` gem during the compile phase
 chef_gem 'chef-handler-profiler' do
   action :install
-  compile_time true
 end
 
 # load the gem here so it gets added to the $LOAD_PATH, otherwise chef_handler
